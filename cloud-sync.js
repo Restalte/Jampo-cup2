@@ -255,7 +255,9 @@
           loadingRemote = false;
 
           // 表示側に最新データを読み直させる
-          if (!isAdminPage) location.reload();
+          if (!isAdminPage) {
+  window.dispatchEvent(new Event("jampo-data-updated"));
+}
         }
       }
 
