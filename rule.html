@@ -1,1 +1,77 @@
 
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#ffd900">
+<title>大会ルール | JAMPO CUP</title>
+<meta name="description" content="JAMPO CUP（雀蜂杯）の大会ルール。Mリーグ公式戦ルールを参考にした競技規定。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Noto+Serif+JP:wght@700;900&display=swap" rel="stylesheet">
+<style>
+:root{--yellow:#ffd900;--yellow2:#ffe94f;--ink:#171717;--muted:#666;--line:#e8e5dc;--max:1000px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:#fff;font-family:"Noto Sans JP",sans-serif;line-height:1.85}a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),calc(100% - 44px));margin:auto}
+.topbar{height:76px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #eee;background:rgba(255,255,255,.96);position:sticky;top:0;z-index:20;backdrop-filter:blur(12px)}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900;letter-spacing:.04em}.bee{width:43px;height:43px;display:grid;place-items:center;background:var(--yellow);clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);font-size:25px}.brand-title{font-family:"Noto Serif JP",serif;font-size:24px;line-height:1}.brand-sub{font-size:9px;letter-spacing:.24em;margin-top:5px;display:block}
+nav{display:flex;align-items:center;gap:26px;font-size:12px;font-weight:700;letter-spacing:.1em}nav a{padding:27px 0;position:relative}nav a:hover:after,nav a.active:after{content:"";position:absolute;bottom:17px;left:0;width:100%;height:3px;background:var(--yellow)}.menu{display:none;border:0;background:var(--yellow);padding:10px 13px;font-weight:900}
+.hero{background:radial-gradient(ellipse at 50% 40%,#fff 0%,#fff 35%,#fff9d9 75%,#fff 100%);border-bottom:1px solid #f3edc8;text-align:center;padding:70px 20px 62px;position:relative;overflow:hidden}.hero:before,.hero:after{content:"";position:absolute;inset:0 auto 0 0;width:20%;background:linear-gradient(135deg,transparent 0 25%,rgba(255,217,0,.4) 25% 32%,transparent 32% 52%,rgba(255,217,0,.16) 52% 62%,transparent 62%);transform:skewX(-15deg)}.hero:after{left:auto;right:0;transform:skewX(-15deg) scaleX(-1)}.hero>*{position:relative;z-index:1}.eyebrow{font-size:11px;letter-spacing:.32em;font-weight:900}.eyebrow:before,.eyebrow:after{content:"";display:inline-block;width:30px;height:2px;background:var(--yellow);vertical-align:middle;margin:0 12px}.hero h1{font-family:"Noto Serif JP",serif;font-size:clamp(44px,8vw,78px);line-height:1.2;margin:14px 0 8px;font-weight:900;letter-spacing:.06em;text-shadow:2px 2px 0 rgba(255,217,0,.7)}.hero .en{font-size:11px;letter-spacing:.42em;font-weight:900}.hero p{font-size:13px;color:#555;margin:20px auto 0;max-width:600px}
+.section{padding:44px 0}.section-title{margin:0 0 22px;font-size:24px;font-weight:900;display:flex;align-items:center;gap:12px}.section-title:before{content:"";display:block;width:6px;height:29px;background:var(--yellow);transform:skew(-12deg)}.section-en{display:block;font-size:10px;color:#777;letter-spacing:.2em;margin-top:-18px;margin-bottom:25px}.rule-intro{background:#171717;color:#fff;padding:23px 26px;margin-bottom:28px;border-left:6px solid var(--yellow)}.rule-intro strong{color:var(--yellow);font-size:16px}.rule-intro p{margin:5px 0 0;color:#ddd;font-size:13px}
+.rule-card{border:1px solid var(--line);margin:0 0 18px;background:#fff}.rule-card h2{font-size:17px;margin:0;padding:15px 20px;background:#fffbed;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:10px}.rule-card h2:before{content:"";display:block;width:4px;height:20px;background:var(--yellow)}.rule-card .body{padding:18px 22px}.rule-card p{margin:0 0 12px}.rule-card p:last-child{margin-bottom:0}.rule-card ul{margin:0;padding-left:1.35em}.rule-card li{margin:5px 0}.note{font-size:12px;color:#777}.number{display:inline-grid;place-items:center;min-width:24px;height:24px;padding:0 5px;background:var(--yellow);font-size:11px;font-weight:900;margin-right:7px}
+.point-table{width:100%;border-collapse:collapse;font-size:13px}.point-table th,.point-table td{padding:11px 14px;border-bottom:1px solid var(--line);text-align:left}.point-table th{background:#f7f6f1;font-size:11px;color:#666}.point-table tr:last-child td{border-bottom:0}.back{display:inline-flex;align-items:center;gap:9px;padding:12px 18px;border:1px solid #171717;font-size:12px;font-weight:900;margin-top:14px}.back:hover{background:var(--yellow);border-color:var(--yellow)}footer{background:#111;color:white;padding:30px 0;margin-top:24px}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:20px}.footer-note{font-size:10px;color:#aaa;margin-top:8px}.footer-links{display:flex;gap:20px;font-size:11px;color:#ddd}
+@media(max-width:700px){.wrap{width:min(100% - 30px,var(--max))}.topbar{height:65px}.brand-title{font-size:20px}.bee{width:37px;height:37px}nav{display:none;position:absolute;top:65px;left:0;right:0;background:white;padding:10px 22px 20px;box-shadow:0 10px 15px #0001;flex-direction:column;align-items:stretch;gap:0}nav.open{display:flex}nav a{padding:12px 0;border-bottom:1px solid #eee}nav a:hover:after,nav a.active:after{display:none}.menu{display:block}.hero{padding:54px 14px 45px}.section{padding:32px 0}.section-title{font-size:21px}.rule-card h2{font-size:15px;padding:13px 15px}.rule-card .body{padding:15px}.rule-intro{padding:18px}.point-table th,.point-table td{padding:9px 8px}.footer-inner{align-items:flex-start;flex-direction:column}.footer-links{flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:20px">
+    <a class="brand" href="index.html" aria-label="雀蜂杯トップ"><span class="bee">蜂</span><span><span class="brand-title">雀蜂杯</span><span class="brand-sub">JAMPO CUP</span></span></a>
+    <nav id="nav">
+      <a href="index.html">HOME</a><a href="index.html#rankings">RANKING</a><a href="index.html#news">NEWS</a><a href="index.html#teams">TEAMS</a><a href="players.html">PLAYERS</a><a href="index.html#schedule">SCHEDULE</a><a class="active" href="rules.html">RULE</a><a href="index.html#about">ABOUT</a>
+    </nav>
+    <button class="menu" id="menu" aria-label="メニュー">☰</button>
+  </div>
+</header>
+<main>
+<section class="hero">
+  <div class="eyebrow">OFFICIAL TOURNAMENT REGULATIONS</div>
+  <h1>大会ルール</h1>
+  <div class="en">J A M P O&nbsp; C U P</div>
+  <p>すべての選手が公平に、そして全力で戦うための競技規定。</p>
+</section>
+<section class="section"><div class="wrap">
+  <div class="rule-intro"><strong>雀蜂杯 競技ルールについて</strong><p>本大会は、Mリーグの公式戦ルールを参考に運用します。以下は大会参加者向けに要点を整理したものです。Mリーグ公式ルールの全文転載ではなく、雀魂の大会戦機能で設定・運用できる項目を基本とします。</p></div>
+
+  <h2 class="section-title">競技の基本</h2><span class="section-en">MATCH FORMAT</span>
+  <article class="rule-card"><h2><span class="number">01</span>対局形式</h2><div class="body"><ul><li>1卓4人で行う東南戦（半荘）を1回戦とします。</li><li>東場・南場の2場で対局を行います。</li><li>途中流局はありません。</li><li>持ち点が0点以下になっても、最終局終了まで対局を続行します（トビ終了なし）。</li></ul></div></article>
+  <article class="rule-card"><h2><span class="number">02</span>使用用具・対局環境</h2><div class="body"><p>対局には、雀魂の大会戦機能を使用します。大会設定は、雀蜂杯の競技ルールに沿って統一します。</p></div></article>
+  <article class="rule-card"><h2><span class="number">03</span>基本ルール</h2><div class="body"><ul><li>アガリには1翻以上の役が必要です。</li><li>赤ドラは赤五萬・赤五筒・赤五索を各1枚使用する設定とします。</li><li>ダブロンは採用せず、複数人がロンを宣言できる状況では頭ハネとします。</li><li>一局中の槓は、全体で4回までとします。</li><li>暗槓に対する搶槓（チャンカン）は認めません。</li></ul></div></article>
+
+  <h2 class="section-title" style="margin-top:38px">リーチ・アガリ・流局</h2><span class="section-en">DECLARATION & ROUND END</span>
+  <article class="rule-card"><h2><span class="number">04</span>リーチ</h2><div class="body"><ul><li>リーチは門前（メンゼン）の状態で宣言できます。</li><li>フリテンリーチを認めます。</li><li>ツモ番が残っていない場合のリーチも認めます。ただし、海底牌をツモした者はリーチできません。</li><li>リーチ後のアガリ見逃しは可能ですが、その後はフリテン扱いとなります。</li><li>リーチ後の暗槓は、面子構成が変わらない場合に限り認めます。</li></ul></div></article>
+  <article class="rule-card"><h2><span class="number">05</span>アガリの優先順位</h2><div class="body"><p>アガリが最優先です。鳴きの発声が重なった場合は、ポン・カンをチーより優先します。複数人がロンできる場合は、頭ハネにより放銃者から見て優先順位の高い1人のみアガリとなります。</p></div></article>
+  <article class="rule-card"><h2><span class="number">06</span>連荘・積み棒・流局</h2><div class="body"><ul><li>親がアガった場合は連荘します。</li><li>親がテンパイで流局した場合も連荘します。</li><li>本場は1本につき300点を加算します。</li><li>流局時のテンパイ料は、合計3,000点をノーテン者からテンパイ者へ支払います。</li><li>半荘終了時に残ったリーチ棒は、その時点のトップ者に加算します。</li></ul></div></article>
+
+  <h2 class="section-title" style="margin-top:38px">得点・順位</h2><span class="section-en">SCORING SYSTEM</span>
+  <article class="rule-card"><h2><span class="number">07</span>持ち点・原点</h2><div class="body"><p>各プレイヤーの開始時持ち点は25,000点とします。順位は半荘終了時の得点によって決定します。</p></div></article>
+  <article class="rule-card"><h2><span class="number">08</span>順位点（ウマ・オカ）</h2><div class="body"><p>雀蜂杯の順位ポイント計算は、Mリーグ方式を参考に以下の通りとします。</p><table class="point-table"><thead><tr><th>順位</th><th>順位点</th></tr></thead><tbody><tr><td>1位</td><td>+50.0ポイント</td></tr><tr><td>2位</td><td>+10.0ポイント</td></tr><tr><td>3位</td><td>−10.0ポイント</td></tr><tr><td>4位</td><td>−30.0ポイント</td></tr></tbody></table><p style="margin-top:13px">持ち点は30,000点を基準に、1,000点を1.0ポイントとして換算します。順位点と持ち点によるポイントを合算し、チーム・個人の成績に反映します。</p><p class="note">例：35,800点で2位の場合、持ち点分+5.8ポイントと順位点+10.0ポイントを合算し、+15.8ポイントとなります。</p></div></article>
+  <article class="rule-card"><h2><span class="number">09</span>同点の場合</h2><div class="body"><p>半荘終了時に同点となった場合は、該当順位の順位点を分け合います。</p></div></article>
+
+  <h2 class="section-title" style="margin-top:38px">反則・マナー</h2><span class="section-en">PENALTIES & FAIR PLAY</span>
+  <article class="rule-card"><h2><span class="number">10</span>アガリ放棄</h2><div class="body"><p>多牌・少牌、先ヅモ、食い換え、空チー・空ポン・空カン、発声のみでアガリを宣言して手牌を公開しない行為、鳴きの発声間違いなどは、原則としてアガリ放棄とします。アガリ放棄となった場合、その局の終了までチー・ポン・カン・リーチ・アガリはできません。</p></div></article>
+  <article class="rule-card"><h2><span class="number">11</span>チョンボ</h2><div class="body"><p>誤ったアガリを宣言して手牌を公開した場合、ノーテンリーチ、不正なリーチ後の槓など、重大な反則はチョンボとします。チョンボが発生した局はやり直しとし、該当者のトータルポイントから20ポイントを減算します。</p><p class="note">オンライン対局のシステム上、雀魂の大会戦機能で処理できない事象が発生した場合は、大会運営が対局結果・ポイントの扱いを確認します。</p></div></article>
+  <article class="rule-card"><h2><span class="number">12</span>フェアプレー</h2><div class="body"><ul><li>参加者は本ルールを遵守し、公平なプレーを行ってください。</li><li>対局中の意図的な遅延、妨害、不正行為は禁止します。</li><li>大会運営上、ルールに定めのない事態が発生した場合は、参加者間の公平性を優先して対応します。</li></ul></div></article>
+
+  <p class="note">※本ページはMリーグ公式戦ルールを参考に、雀蜂杯向けに要点を整理したものです。Mリーグ公式ルールそのものではありません。大会設定・運用の都合により、正式な大会要項で補足・変更する場合があります。</p>
+  <a class="back" href="index.html">← ホームページへ戻る</a>
+</div></section>
+</main>
+<footer><div class="wrap footer-inner"><div><a class="brand" href="index.html"><span class="bee">蜂</span><span><span class="brand-title">雀蜂杯</span><span class="brand-sub">JAMPO CUP</span></span></a><div class="footer-note">© 2026 JAMPO CUP. All rights reserved.</div></div><div class="footer-links"><a href="index.html#rankings">RANKING</a><a href="index.html#teams">TEAMS</a><a href="rules.html">RULE</a><a href="index.html#about">ABOUT</a></div></div></footer>
+<script>
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');
+menu?.addEventListener('click',()=>nav.classList.toggle('open'));
+nav?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+</script>
+</body>
+</html>
