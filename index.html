@@ -134,37 +134,33 @@ footer{background:#111;color:white;padding:34px 0}.footer-inner{display:flex;jus
 }
 
 
-/* 今日の対戦カード */
+/* 今日の対戦カード：トレーディングカード風 */
 .today-matches{margin:0 0 48px}
 .today-matches-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px}
 .today-matches-title{margin:0;font-size:27px;font-weight:900;letter-spacing:.02em;display:flex;align-items:center;gap:13px}
 .today-matches-title:before{content:"";display:block;width:6px;height:31px;background:var(--yellow);transform:skew(-12deg)}
 .today-matches-en{display:block;margin-top:3px;font-size:10px;letter-spacing:.2em;color:#777}
-.match-slider{position:relative;border:1px solid #e8e5dc;background:linear-gradient(110deg,#fffdf2,#fff 42%,#fffdf2);padding:22px 68px;min-height:250px}
-.match-slide-meta{display:flex;align-items:center;gap:12px;margin-bottom:20px}
-.match-date{font-size:15px;font-weight:900;letter-spacing:.04em}
-.match-round{font-size:10px;font-weight:900;letter-spacing:.08em;background:var(--yellow);padding:5px 10px}
-.match-teams{display:grid;grid-template-columns:1fr 1fr;gap:14px 22px;max-width:760px;margin:0 auto}
-.match-team{position:relative;display:flex;align-items:center;justify-content:center;gap:13px;min-width:0;min-height:90px;padding:10px 15px;background:#fff;border:1px solid #eee9da;overflow:hidden}.match-player-image{position:absolute;z-index:1;left:0;top:0;width:100%;height:100%;object-fit:contain;pointer-events:none}.match-logo-image{position:absolute;z-index:2;right:8px;top:7px;width:44px;height:44px;object-fit:contain;pointer-events:none}.match-team-name{position:relative;z-index:3;text-shadow:0 1px 3px #fff,0 0 6px #fff;background:#ffffffb8;padding:3px 7px;border-radius:3px}
-.match-team img{width:52px;height:52px;object-fit:contain;flex:none}
-.match-team-fallback{width:52px;height:52px;display:grid;place-items:center;flex:none;font-size:25px;font-weight:1000}
-.match-team-name{font-size:clamp(14px,2vw,20px);font-weight:900;overflow-wrap:anywhere}
-.match-arrow{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:58px;border:1px solid #e8e5dc;background:rgba(255,255,255,.62);color:#777;font-size:27px;line-height:1;cursor:pointer;transition:.2s}
-.match-arrow:hover:not(:disabled){background:var(--yellow);border-color:var(--yellow);color:#171717}
-.match-arrow:disabled{opacity:.2;cursor:default}
-.match-arrow.prev{left:14px}.match-arrow.next{right:14px}
-.match-page{position:absolute;right:68px;bottom:12px;font-size:10px;color:#888;font-variant-numeric:tabular-nums}
+.match-slider{position:relative;border:1px solid #d8cfaa;background:linear-gradient(135deg,#fff9dc,#f4edcf 48%,#fffdf4);padding:24px 68px 42px;min-height:360px;box-shadow:0 12px 30px #241e0c12}
+.match-slide-meta{display:flex;align-items:center;gap:12px;margin:0 0 18px;padding:0 4px}
+.match-date{font-size:14px;font-weight:900;letter-spacing:.08em;color:#26251e}
+.match-round{font-size:10px;font-weight:900;letter-spacing:.1em;background:var(--yellow);padding:5px 11px;color:#171713}
+.match-teams{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:900px;margin:0 auto}
+.match-team{position:relative;isolation:isolate;display:block;min-width:0;aspect-ratio:1.42/1;overflow:hidden;border:2px solid #29271e;border-radius:5px;background:#fffdf3;box-shadow:0 5px 0 #b5a66c,0 9px 18px #1c190e24}
+.match-team:before{content:"";position:absolute;inset:5px;border:1px solid #d5b94d;z-index:4;pointer-events:none}
+.match-team:after{content:"";position:absolute;inset:48% 0 0;z-index:2;background:linear-gradient(180deg,transparent 0%,#15140fe8 86%);pointer-events:none}
+.match-player-image{position:absolute;z-index:1;left:0;bottom:0;width:100%;height:100%;object-fit:contain;object-position:center bottom;pointer-events:none;transform-origin:center bottom}
+.match-team-logo{position:absolute;z-index:5;right:13px;top:12px;width:clamp(44px,7vw,76px);height:clamp(44px,7vw,76px);object-fit:contain;filter:drop-shadow(0 2px 4px #0008);pointer-events:none;transform-origin:center center}
+.match-card-topline{position:absolute;z-index:6;left:14px;top:13px;max-width:calc(100% - 110px);font-size:10px;font-weight:900;letter-spacing:.12em;color:#fff;text-shadow:0 1px 5px #000;background:#171713c9;padding:5px 8px}
+.match-card-info{position:absolute;z-index:6;left:16px;right:16px;bottom:13px;color:white;display:flex;flex-direction:column;gap:3px;text-shadow:0 2px 4px #000}
+.match-card-team{font-size:clamp(11px,1.4vw,14px);font-weight:800;letter-spacing:.12em;color:#f4d64d}
+.match-card-player{font-size:clamp(19px,2.5vw,29px);font-weight:1000;line-height:1.15;letter-spacing:.04em;overflow-wrap:anywhere}
+.match-card-number{position:absolute;z-index:6;right:15px;bottom:15px;font-size:10px;letter-spacing:.16em;color:#f5e7a0;font-weight:900}
+.match-arrow{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:58px;border:1px solid #c8bb87;background:rgba(255,255,255,.68);color:#6f6543;font-size:27px;line-height:1;cursor:pointer;transition:.2s;clip-path:polygon(0 0,100% 12%,100% 88%,0 100%)}
+.match-arrow:hover:not(:disabled){background:var(--yellow);color:#171717}
+.match-arrow:disabled{opacity:.2;cursor:default}.match-arrow.prev{left:14px}.match-arrow.next{right:14px}
+.match-page{position:absolute;right:68px;bottom:13px;font-size:10px;color:#777;font-variant-numeric:tabular-nums;letter-spacing:.12em}
 .match-empty{padding:45px 15px;text-align:center;color:#777;font-size:13px;background:#faf9f5;border:1px dashed #e5e0d1}
-@media(max-width:650px){
- .today-matches{margin-bottom:35px}.today-matches-title{font-size:23px}
- .match-slider{padding:18px 42px 34px;min-height:220px}
- .match-slide-meta{margin-bottom:15px;gap:8px}.match-date{font-size:13px}
- .match-teams{gap:9px}.match-team{min-height:76px;flex-direction:column;gap:5px;padding:8px 3px;text-align:center}
- .match-team img,.match-team-fallback{width:38px;height:38px;font-size:20px}
- .match-team-name{font-size:12px;line-height:1.35}
- .match-arrow{width:27px;height:46px;font-size:21px}
- .match-arrow.prev{left:6px}.match-arrow.next{right:6px}.match-page{right:42px;bottom:10px}
-}
+@media(max-width:650px){.today-matches{margin-bottom:35px}.today-matches-title{font-size:23px}.match-slider{padding:16px 38px 36px;min-height:300px}.match-slide-meta{margin-bottom:13px;gap:7px;flex-wrap:wrap}.match-date{font-size:12px}.match-teams{gap:10px}.match-team{aspect-ratio:.88/1;border-width:1px}.match-team:before{inset:3px}.match-team:after{inset:38% 0 0}.match-team-logo{width:40px;height:40px;right:7px;top:7px}.match-card-topline{left:8px;top:8px;font-size:8px;max-width:calc(100% - 60px);padding:4px 5px}.match-card-info{left:9px;right:8px;bottom:9px;gap:2px}.match-card-team{font-size:9px}.match-card-player{font-size:clamp(13px,3.6vw,18px)}.match-card-number{right:8px;bottom:10px;font-size:8px}.match-arrow{width:25px;height:44px;font-size:20px}.match-arrow.prev{left:5px}.match-arrow.next{right:5px}.match-page{right:38px;bottom:10px}}
 
 
 <style id="match-image-layer-fix">
@@ -417,46 +413,37 @@ function jakRows(table,rows){if(!table)return;const body=table.querySelector('tb
 let todayMatchIndex=0;
 function renderTodayMatches(d){
   const content=document.getElementById('today-match-content');
-  const prev=document.getElementById('match-prev');
-  const next=document.getElementById('match-next');
-  const page=document.getElementById('match-page');
+  const prev=document.getElementById('match-prev'),next=document.getElementById('match-next'),page=document.getElementById('match-page');
   if(!content||!prev||!next||!page)return;
-  const fixtures=Array.isArray(d.fixtures)?d.fixtures:[];
-  const grouped={};
-  fixtures.forEach(f=>{const date=String(f.date||'日程未定');(grouped[date]??=[]).push(f);});
+  const fixtures=Array.isArray(d.fixtures)?d.fixtures:[],grouped={};
+  fixtures.forEach(f=>{const date=String(f.date||'日程未定');(grouped[date]??=[]).push(f)});
   const dates=Object.keys(grouped).filter(x=>x!=='日程未定').sort();
-  const now=new Date();
-  const todayKey=`${now.getFullYear()}.${String(now.getMonth()+1).padStart(2,'0')}.${String(now.getDate()).padStart(2,'0')}`;
+  const now=new Date(),todayKey=`${now.getFullYear()}.${String(now.getMonth()+1).padStart(2,'0')}.${String(now.getDate()).padStart(2,'0')}`;
   let selectedDate=dates.find(x=>x.replaceAll('/','.').replaceAll('-','.')===todayKey);
   if(!selectedDate)selectedDate=dates.find(x=>x.replaceAll('/','.').replaceAll('-','.')>=todayKey);
   if(!selectedDate)selectedDate=dates[dates.length-1];
   const todays=selectedDate?(grouped[selectedDate]||[]):[];
-  if(!todays.length){
-    content.innerHTML='<div class="match-empty">対戦カードは決定次第掲載されます。</div>';
-    prev.disabled=true;next.disabled=true;page.textContent='';
-    return;
-  }
+  if(!todays.length){content.innerHTML='<div class="match-empty">対戦カードは決定次第掲載されます。</div>';prev.disabled=true;next.disabled=true;page.textContent='';return}
+  todays.sort((a,b)=>(a.time||'').localeCompare(b.time||''));
   todayMatchIndex=Math.max(0,Math.min(todayMatchIndex,todays.length-1));
-  const f=todays[todayMatchIndex],meta=d.teamMeta||{};
-  const teams=(f.teams||[]).slice(0,4);
-  const teamHtml=teams.map((team,i)=>{
-    const m=meta[team]||{},color=/^#[0-9a-fA-F]{6}$/.test(m.color||'')?m.color:'#f2cc24';
-    const player=(d.players||[]).find(p=>String(p.id)===String(f.playerIds?.[i]||''));
+  const f=todays[todayMatchIndex],meta=d.teamMeta||{},players=d.players||[];
+  const cards=(f.teams||[]).slice(0,4).map((team,i)=>{
+    const m=meta[team]||{},player=players.find(p=>String(p.id)===String(f.playerIds?.[i]||''));
     const pl=f.playerLayouts?.[i]||{x:0,y:0,scale:1},ll=f.logoLayouts?.[i]||{x:0,y:0,scale:1};
     const playerImg=player?.image?`<img class="match-player-image" src="${jakEsc(player.image)}" alt="${jakEsc(player.name||'選手')}" style="transform:translate(${Number(pl.x)||0}%,${Number(pl.y)||0}%) scale(${Number(pl.scale)||1})">`:'';
-    const logo=f.logoImages?.[i]?`<img class="match-logo-image" src="${jakEsc(f.logoImages[i])}" alt="ロゴ" style="transform:translate(${Number(ll.x)||0}%,${Number(ll.y)||0}%) scale(${Number(ll.scale)||1})">`:'';
-    const icon=!playerImg&&!logo?(m.image?`<img src="${jakEsc(m.image)}" alt="">`:`<span class="match-team-fallback" style="color:${color}">${jakEsc(String(team).slice(0,2))}</span>`):'';
-    return `<div class="match-team" style="background:${/^#[0-9a-fA-F]{6}$/.test(f.backgroundColor||'')?f.backgroundColor:'#fff'}">${playerImg}${icon}${logo}<span class="match-team-name">${jakEsc(team)}</span></div>`;
+    const logoSrc=f.logoImages?.[i]||m.image||'';
+    const logo=logoSrc?`<img class="match-team-logo" src="${jakEsc(logoSrc)}" alt="${jakEsc(team)} ロゴ" style="transform:translate(${Number(ll.x)||0}%,${Number(ll.y)||0}%) scale(${Number(ll.scale)||1})">`:'';
+    const bg=/^#[0-9a-fA-F]{6}$/.test(f.backgroundColor||'')?f.backgroundColor:'#fffdf3';
+    const teamColor=/^#[0-9a-fA-F]{6}$/.test(m.color||'')?m.color:'#f2cc24';
+    return `<article class="match-team" style="background:${bg};border-color:${teamColor}"><span class="match-card-topline">${jakEsc(f.status||'MATCH')}</span>${playerImg}${logo}<div class="match-card-info"><span class="match-card-team">${jakEsc(team)}</span><strong class="match-card-player">${jakEsc(player?.name||'出場選手未設定')}</strong></div><span class="match-card-number">PLAYER 0${i+1}</span></article>`;
   }).join('');
   const dateLabel=selectedDate.replaceAll('-','.').replaceAll('/','.');
   const roundLabel=f.name||`${todayMatchIndex+1}回戦目`;
-  const slider=document.getElementById('today-match-slider');if(slider)slider.style.background=/^#[0-9a-fA-F]{6}$/.test(f.backgroundColor||'')?f.backgroundColor:'linear-gradient(110deg,#fffdf2,#fff 42%,#fffdf2)';
-  content.innerHTML=`<div class="match-slide-meta"><strong class="match-date">${jakEsc(dateLabel)}</strong><span class="match-round">${jakEsc(roundLabel)}</span>${f.time?`<span class="match-round">${jakEsc(f.time)}</span>`:''}</div><div class="match-teams">${teamHtml||'<div class="match-empty">参加チーム未設定</div>'}</div>`;
-  prev.disabled=todayMatchIndex===0;
-  next.disabled=todayMatchIndex===todays.length-1;
-  page.textContent=`${todayMatchIndex+1} / ${todays.length}`;
-  prev.onclick=()=>{if(todayMatchIndex>0){todayMatchIndex--;renderTodayMatches(d);}};
-  next.onclick=()=>{if(todayMatchIndex<todays.length-1){todayMatchIndex++;renderTodayMatches(d);}};
+  const slider=document.getElementById('today-match-slider');if(slider)slider.style.background='linear-gradient(135deg,#fff9dc,#f4edcf 48%,#fffdf4)';
+  content.innerHTML=`<div class="match-slide-meta"><strong class="match-date">${jakEsc(dateLabel)}</strong><span class="match-round">${jakEsc(roundLabel)}</span>${f.time?`<span class="match-round">${jakEsc(f.time)}</span>`:''}</div><div class="match-teams">${cards||'<div class="match-empty">参加チーム未設定</div>'}</div>`;
+  prev.disabled=todayMatchIndex===0;next.disabled=todayMatchIndex===todays.length-1;page.textContent=`${todayMatchIndex+1} / ${todays.length}`;
+  prev.onclick=()=>{if(todayMatchIndex>0){todayMatchIndex--;renderTodayMatches(d)}};
+  next.onclick=()=>{if(todayMatchIndex<todays.length-1){todayMatchIndex++;renderTodayMatches(d)}};
 }
 function jakRender(){let d=jakGet(),c=jakCompute(d);renderTodayMatches(d);const teamTable=document.getElementById('team-ranking-table');if(teamTable){let ts=[...c.teams].sort((a,b)=>b.points-a.points),leader=ts[0]?.points||0;jakRows(teamTable,ts.map((t,i)=>{const meta=d.teamMeta?.[t.name]||{};const icon=meta.image?`<img class="team-icon-large" src="${meta.image}" alt="${jakEsc(t.name)} アイコン">`:`<span class="team-icon-fallback-large">${jakEsc(t.name.slice(0,1))}</span>`;return `<tr class="${i===0?'rank-first':''}"><td><span class="rank-medal">${i+1}</span></td><td class="team-icon-col">${icon}</td><td class="team-name-col"><strong>${(d.teamMeta?.[t.name]||{}).published?jakEsc(((d.teamMeta?.[t.name]||{}).shortName||t.name).slice(0,(window.matchMedia('(max-width: 720px)').matches?10:7))):'COMING SOON'}</strong></td><td class="points">${jakFmt(t.points)} <small>pt</small></td><td class="team-diff-large ${t.points-leader<0?'negative':'positive'}">${jakFmt(t.points-leader)}pt</td><td class="team-matches-large">${t.matches}/48</td></tr>`}).join(''));}
 function renderPlayers(table,type){if(!table)return;let list=c.players.filter(s=>(d.teamMeta?.[s.player.team]||{}).published).sort((a,b)=>type==='best'?((b.best??-Infinity)-(a.best??-Infinity)):b.points-a.points);let showAll=table.dataset.showall==='1';let visible=showAll?list:list.slice(0,8);jakRows(table,visible.map((s,i)=>`<tr><td><span class="rank-medal">${i+1}</span></td><td><strong>${jakEsc(s.player.name)}</strong></td><td><span class="team-tag">${(d.teamMeta?.[s.player.team]||{}).published?jakEsc((d.teamMeta?.[s.player.team]||{}).shortName||s.player.team):'COMING SOON'}</span></td><td class="points">${type==='best'?(s.best===null?'—':jakEsc(s.best)):(jakFmt(s.points)+' <small>pt</small>')}</td></tr>`).join(''));let panel=table.closest('.ranking-panel');if(panel&&!panel.querySelector('[data-jak-showall]')&&list.length>8){let b=document.createElement('button');b.className='more';b.style.cssText='border:0;border-bottom:2px solid var(--yellow);background:white;cursor:pointer;margin:10px 20px';b.textContent='8位以下を表示 ＋';b.dataset.jakShowall=type;b.onclick=()=>{table.dataset.showall='1';b.textContent='上位8位のみ表示 −';b.onclick=()=>{table.dataset.showall='0';jakRender()};jakRender()};panel.appendChild(b)}else if(panel&&list.length<=8){let b=panel.querySelector('[data-jak-showall]');if(b)b.remove()}}
